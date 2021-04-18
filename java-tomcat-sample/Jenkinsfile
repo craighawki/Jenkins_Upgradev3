@@ -12,13 +12,13 @@ pipeline {
                 }
             }
         }
-        // stage('Deploy in the Staging Environment') {
-        //     steps {
-        //         build job: 'Deploy_Application_Staging_Env'
+        stage('Deploy in the Staging Environment') {
+            steps {
+                build job: 'Deploy_Application_Staging_Env'
 
-        //     }
+            }
 
-        // }
+        }
         // stage('Deploy to Production') {
         //     steps {
         //         timeout(time:5, unit:'DAYS') {
